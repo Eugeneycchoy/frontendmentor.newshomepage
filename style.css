@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** Custom **/
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+}
+
+.container {
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 20px;
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+nav ul li a:first-child {
+  margin-right: 30%;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+.logo {
+  margin-right: 40%;
+}
+
+main {
+  height: 70vh;
+  display: grid;
+  grid-template-areas:
+    "cover-image cover-image news-feed"
+    "headline more-info news-feed";
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1.5fr 1fr;
+}
+
+.cover-image,
+.news-feed,
+.headline,
+.more-info {
+  padding: 20px;
+  color: #fff;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  padding: 0 20px;
+}
+
+.cover-image img {
+  width: 99%;
+}
+
+.news-feed {
+  grid-area: news-feed;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.news-feed h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.news-feed h3 {
+  color: hsl(36, 100%, 99%);
+  font-size: 0.75em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.news-feed hr {
+  margin: 40px auto;
+}
+
+.headline {
+  grid-area: headline;
+  padding-top: 0;
+}
+
+.headline h1 {
+  font-size: 2.6em;
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+}
+
+.more-info {
+  grid-area: more-info;
+  padding-top: 0;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: hsl(236, 13%, 42%);
+}
+.more-info button {
+  margin-top: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  align-items: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  margin: 20px;
+}
+
+footer img {
+  width: 80px;
+  float: left;
+  margin-right: 20px;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.article-text {
+  width: 55%;
+}
+
+.article-text h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.article-text h3 {
+  font-size: 13px;
+}
